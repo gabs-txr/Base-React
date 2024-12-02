@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import ColoredText from './components/uppercase/uppercase'
+import Button from './components/button/button';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ColoredText text ='Esse texto ficará maiúsico nao importa como foi escrtio' color = 'red'/>
+      <ColoredText />
+
+      <Button label='insira a label aqui via JS'/>
+      <Button />
+    </>
   );
 }
 
